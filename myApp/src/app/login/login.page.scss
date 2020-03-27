@@ -1,0 +1,52 @@
+/*todo:
+1. put everything in the center
+2. margin left and right
+3. change color: 
+ - email & password is red
+ - login button is red
+4. forgot your password? hyperlink
+*/
+
+form{
+    margin-top:50%;
+    margin-left: 1rem;
+    margin-right:1rem;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+}
+
+//label color
+.ion-color.sc-ion-label-md-h {
+    color: #DB1848;
+}
+
+.validation-errors{
+    margin-top: 0.5rem;
+    text-align: initial;
+    font-size: 0.8rem;
+    color: #707070;
+}
+
+//style button
+ion-button.submit-btn.md.button.button-solid.ion-activatable.ion-focusable.hydrated {
+    --border-radius: 2rem;
+    font-size: 0.8rem;
+    --background: #DB1848;
+    padding: 0.2rem;
+    margin-top: 1rem;
+    width: fit-content;
+    align-self: center;
+}
+
+.go-to-register{
+    color:#707070;
+    font-size:0.8rem;
+}
+
+a{
+    color: #707070;
+    margin-top: 1rem;
+    text-decoration: underline;
+    font-size: 0.8rem;
+}
