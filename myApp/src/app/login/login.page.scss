@@ -1,5 +1,9 @@
 form{
-    margin-top:50%;
+    font-family:"SF-Pro-Light";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width:-webkit-fill-available;
     margin-left: 1rem;
     margin-right:1rem;
     text-align:center;
