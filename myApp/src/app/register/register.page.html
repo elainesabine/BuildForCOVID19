@@ -1,24 +1,32 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Register</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content padding>
   <form class="form" [formGroup]="validations_form"  (ngSubmit)="tryRegister(validations_form.value)">
 
+    <!--First Name | No Validation-->
+    <ion-item>
+      <ion-label  position="floating" color="primary">First Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+   
+    <!--Last Name | No Validation-->
+    <ion-item>
+      <ion-label  position="floating" color="primary">Last Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <!--Email | With Validation-->
     <ion-item>
       <ion-label  position="floating" color="primary">Email</ion-label>
-      <ion-input type="text" formControlName="email"></ion-input>
-    </ion-item>
-    <div class="validation-errors">
-      <ng-container *ngFor="let validation of validation_messages.email">
-        <div class="error-message" *ngIf="validations_form.get('email').hasError(validation.type) && (validations_form.get('email').dirty || validations_form.get('email').touched)">
-          {{ validation.message }}
-        </div>
-      </ng-container>
-    </div>
+        <ion-input type="text" formControlName="email"></ion-input>
+      </ion-item>
+      <div class="validation-errors">
+        <ng-container *ngFor="let validation of validation_messages.email">
+          <div class="error-message" *ngIf="validations_form.get('email').hasError(validation.type) && (validations_form.get('email').dirty || validations_form.get('email').touched)">
+            {{ validation.message }}
+          </div>
+        </ng-container>
+      </div>
 
+    <!--password | With Validation-->
     <ion-item>
       <ion-label  position="floating" color="primary">Password</ion-label>
       <ion-input type="password" formControlName="password" class="form-controll" required></ion-input>
@@ -31,10 +39,10 @@
       </ng-container>
     </div>
 
-    
-    <ion-button  class="submit-btn" type="submit"  [disabled]="!validations_form.valid">Register</ion-button>
+    <p class="go-to-login">Already have an account? <a (click)="goLoginPage()">Sign in here.</a></p>
+    <ion-button  class="submit-btn" type="submit"  [disabled]="!validations_form.valid">Sign-up</ion-button>
     <label class="error-message">{{errorMessage}}</label>
     <label class="success-message">{{successMessage}}</label>
   </form>
-  <p class="go-to-login">Already have an account? <a (click)="goLoginPage()">Login here!</a></p>
+  
 </ion-content>
