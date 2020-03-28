@@ -1,4 +1,9 @@
+@font-face{
+    font-family: "SF-Pro-Light";
+    src: url('../../assets/fonts/SFProLight.ttf');
+}
 form{
+    font-family:"SF-Pro-Light";
     margin-top:37.5%;
     margin-left: 1rem;
     margin-right:1rem;
@@ -7,9 +12,12 @@ form{
     flex-direction: column;
 }
 
-//label color
+//label color and font 
 .ion-color.sc-ion-label-md-h {
     color: #DB1848;
+}
+.item.sc-ion-label-md-h, .item .sc-ion-label-md-h{
+    font-family: "SF-Pro-Light";
 }
 
 .validation-errors{

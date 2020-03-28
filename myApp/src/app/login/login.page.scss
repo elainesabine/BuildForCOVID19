@@ -11,6 +11,9 @@ form{
 .ion-color.sc-ion-label-md-h {
     color: #DB1848;
 }
+.item.sc-ion-label-md-h, .item .sc-ion-label-md-h{
+    font-family: "SF-Pro-Light";
+}
 
 .validation-errors{
     margin-top: 0.5rem;
