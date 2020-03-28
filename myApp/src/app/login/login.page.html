@@ -28,7 +28,7 @@
     <!--TODO: redirect user if they forgot their password-->
     <a id="forgot-password">Forgot your password?</a>
 
-    <p class="go-to-register">No account yet? <a (click)="goToRegisterPage()">Create an account</a></p>
+    <a (click)="goToRegisterPage()">No account yet? Create an account</a>
     <ion-button  class="submit-btn" type="submit"  [disabled]="!validations_form.valid">Log-In</ion-button>
  
     <label class="error-message">{{errorMessage}}</label>
