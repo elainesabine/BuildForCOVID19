@@ -1,4 +1,48 @@
-ion-img {
-    width:2em;
-    height:2em;
-  }
+ion-tab-button{
+  background-size: 2em;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*tab1*/
+ion-tab-button#tab-button-tab1 {
+  background-image: url(../../assets/icon/tab1-gray.png);
+}
+ion-tab-button#tab-button-tab1.tab-selected {
+  background-image: url(../../assets/icon/tab1-red.png);
+}
+ion-tab-button#tab-button-tab1:hover{
+  background-image: url(../../assets/icon/tab1-red.png);
+}
+/*tab2*/
+ion-tab-button#tab-button-tab2 {
+  background-image: url(../../assets/icon/tab2-gray.png);
+}
+ion-tab-button#tab-button-tab2.tab-selected {
+  background-image: url(../../assets/icon/tab2-red.png);
+}
+
+ion-tab-button#tab-button-tab2:hover{
+  background-image: url(../../assets/icon/tab2-red.png);
+}
+/*tab3*/
+ion-tab-button#tab-button-tab3 {
+  background-image: url(../../assets/icon/tab3-gray.png);
+}
+ion-tab-button#tab-button-tab3.tab-selected {
+  background-image: url(../../assets/icon/tab3-red.png);
+}
+
+ion-tab-button#tab-button-tab3:hover{
+  background-image: url(../../assets/icon/tab3-red.png);
+}
+/*tab4*/
+ion-tab-button#tab-button-tab4 {
+  background-image: url(../../assets/icon/tab4-gray.png);
+}
+ion-tab-button#tab-button-tab4.tab-selected {
+  background-image: url(../../assets/icon/tab4-red.png);
+}
+
+ion-tab-button#tab-button-tab4:hover{
+  background-image: url(../../assets/icon/tab4-red.png);
+}
