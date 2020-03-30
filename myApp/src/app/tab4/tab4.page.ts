@@ -17,13 +17,13 @@ export class Tab4Page implements OnInit {
   ) { }
 
   ngOnInit() {
-    // if (this.authService.userDetails()){
-    //   this.userEmail = this.authService.userDetails().email;
-    //   this.authService.getFirstName();
-    // } 
-    // else {
-    //   this.navCtrl.navigateBack('login');
-    // }
+    if (this.authService.userDetails()){
+      this.userEmail = this.authService.userDetails().email;
+      this.authService.getFirstName();
+    } 
+    else {
+      this.navCtrl.navigateBack('login');
+    }
   }
 
   accountSettings(){

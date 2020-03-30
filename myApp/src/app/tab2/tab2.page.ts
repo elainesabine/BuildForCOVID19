@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavController, ModalController } from '@ionic/angular';
+import { AuthenticateService } from '../services/authentication.service';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +9,17 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  constructor(
+    private navCtrl: NavController,
+    private authService: AuthenticateService
+  ) { }
+
+  ngOnInit() {
+    if (this.authService.userDetails()){
+    } 
+    else {
+      this.navCtrl.navigateBack('login');
+    }
+  }
 
 }
