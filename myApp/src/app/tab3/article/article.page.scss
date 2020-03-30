@@ -1,0 +1,27 @@
+/*Todo: change fonts*/
+ion-content, ion-toolbar{
+    --background: #F4F4F4;
+  }
+
+  #title {
+    overflow:hidden;
+    line-height: 5rem;
+    padding-left: 4rem;
+    background: url('../../../assets/icon/tab3-red.png') no-repeat left center;
+    background-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+
+  ion-title#color-red{
+    color: #DB1848;
+    font-size: 2rem;
+    padding:0;
+  }
+
+p.content {
+  color: #707070;
+  margin-left: 2rem;
+  font-size: 1rem;
+}

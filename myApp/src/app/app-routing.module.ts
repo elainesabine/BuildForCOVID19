@@ -20,7 +20,7 @@ const routes: Routes = [
   },
   {
     //might be broken tbh who knows
-    path:'tab3',
+    path:'tabs/tab3',
     children: [
       {
         path: '',
@@ -31,10 +31,6 @@ const routes: Routes = [
         loadChildren: () => import('./tab3/article/article.module').then( m => m.ArticlePageModule)
       }
     ]
-  },
-  {
-    path: 'article',
-    loadChildren: () => import('./tab3/article/article.module').then( m => m.ArticlePageModule)
   }
 ];
 @NgModule({

@@ -98,7 +98,14 @@ export class ArticleServiceService {
 
   constructor() { }
   getArticle(){
-    return this.articles;
+    return [...this.articles];
   }
   //get individual articles? go to 2:56:31
+  getEachArticle(title: string){
+    return{
+      ...this.articles.find(article =>{
+        return article.title === title
+      })
+    }
+  }
 }
