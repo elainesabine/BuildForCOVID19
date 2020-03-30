@@ -1,4 +1,6 @@
 # BuildForCOVID19
-commands to run the app: 
+To run:
+
       cd myApp
       ionic serve
+
