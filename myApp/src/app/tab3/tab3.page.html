@@ -23,10 +23,8 @@
     </ion-toolbar>
 
     <!--List of edu contents-->
-    <ion-list>
       <ion-item *ngFor="let article of articles" [routerLink]="['./', article.title]">
         <ion-img class="article-icon" [src]="article.iconUrl"></ion-img>
         <ion-label class="article-label">{{article.title}}</ion-label>
       </ion-item>
-    </ion-list>
 </ion-content>

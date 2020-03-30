@@ -8,10 +8,16 @@
       </ion-toolbar>
     </ion-header>
 
-    <ion-list>
+    <ion-list lines="inset">
       <ion-item *ngFor="let article of loadedArticle.content">
-        <h1 class="article-label">{{article.title}}</h1>
-        <p>{{article.content}}</p>
+        <ion-label class="ion-text-wrap">
+        <ion-title class="article-label">
+          {{article.title}}
+        </ion-title>
+        <ion-text>
+          <p [innerHTML]= "article.content"></p>
+        </ion-text>
+      </ion-label>
       </ion-item>
     </ion-list>
   
