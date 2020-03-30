@@ -1,3 +1,37 @@
-ion-content ion-toolbar {
-  --background: translucent;
+/*Todo: change fonts*/
+ion-content, ion-toolbar{
+  --background: #F4F4F4;
+}
+#title {
+  overflow:hidden;
+  line-height: 5rem;
+  padding-left: 4rem;
+  background: url('../../assets/health.png') no-repeat left center;
+  background-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+ion-title#color-red{
+  color: #DB1848;
+  font-size: 2rem;
+  padding:0;
+}
+
+ion-item {
+  margin: 0.5rem 1rem 0 1rem;
+  border: 1px solid #D6D7DF;
+  border-radius: 10px;
+  --background-activated-opacity: 1;
+  --background-activated: #DB1848;
+  --color-activated: white;
+  font-family: 'SF-Pro-Light';
+  --height: 3em;
+}
+ion-img.icon {
+  width: 100%;
+  margin: 1em;
+}
+ion-text.menuLabel {
+  color: #707070;
 }

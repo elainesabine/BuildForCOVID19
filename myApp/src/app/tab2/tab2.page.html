@@ -1,17 +1,53 @@
-<ion-header [translucent]="true">
+<ion-header id="title" no-border>
   <ion-toolbar>
-    <ion-title>
-      Tab 2
+    <ion-title id="color-red">
+       health tracker
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-row>
+    <ion-col>
+      <ion-item button="true" lines="none">
+        <ion-img class="icon" src="../../assets/smile.png"></ion-img> 
+        <ion-text class="menuLabel"> HAPPY</ion-text>
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-item button="true" lines="none">
+        <ion-img class="icon" src="../../assets/sad.png"></ion-img> <br>
+        <ion-text class="menuLabel"> SAD</ion-text>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-item button="true" lines="none">
+        <ion-img class="icon" src="../../assets/weird.png"></ion-img> 
+        <ion-text class="menuLabel"> OKAY</ion-text>
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-item button="true" lines="none">
+        <ion-img class="icon" src="../../assets/scared.png"></ion-img> <br>
+        <ion-text class="menuLabel"> ANXIOUS</ion-text>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-item button="true" lines="none">
+        <ion-img class="icon" src="../../assets/disgusted.png"></ion-img> 
+        <ion-text class="menuLabel"> SCARED</ion-text>
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-item button="true" lines="none">
+        <ion-img class="icon" src="../../assets/nervous.png"></ion-img> <br>
+        <ion-text class="menuLabel"> STRESSED</ion-text>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  
 </ion-content>
