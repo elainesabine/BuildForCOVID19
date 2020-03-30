@@ -29,9 +29,25 @@ ion-item {
   --height: 3em;
 }
 ion-img.icon {
-  width: 100%;
+  width:50%;
   margin: 1em;
 }
 ion-text.menuLabel {
   color: #707070;
+  font-size:1.5rem;
+}
+
+ion-content.md.hydrated {
+  text-align: -webkit-center;
+}
+ion-item {
+  height: 10rem;
+  background: white;
+  width: 10rem;
+  align-items:center;
+}
+div{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
 }
