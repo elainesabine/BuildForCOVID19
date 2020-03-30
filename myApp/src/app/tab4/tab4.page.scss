@@ -1,0 +1,84 @@
+#tab4Page {
+   --background: #fcfcfc;
+}
+#logoutButton {
+   --border-radius: 2rem;
+   font-size: 1.0rem;
+   --background: #DB1848;
+   padding: 0.2rem;
+   margin-top: 0.5rem;
+   width: fit-content;
+   align-self: center;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#firstName {
+   text-transform: uppercase;
+   color: #DB1848;
+   font-size: 1.6rem;
+   font-weight: bold;
+}
+
+#greeting {
+   font-size: 1.6rem;
+   // font-family:"SF-Pro-Light";
+   color: #707070;
+}
+
+#userEmail {
+   color: #707070;
+   text-decoration: underline;
+   font-size: 1rem;
+}
+
+ion-col {
+   text-align: center;
+}
+
+ion-button.menu{
+   text-align: left;
+   --background: white;
+   --background-activated: #DB1848;
+   margin-left: 1.2em;
+   margin-right: 1.2em;
+   margin-top: 0.5em;
+   margin-bottom: 0.5em;
+   --border-color: #aeaeae;
+   --color: #A6A6A8;
+   --color-activated: white;
+   --border-width: 1px;
+   --border-radius: .5em;
+   font-size: 1.0rem;
+}
+
+ion-button{
+   span{
+     text-align:left;
+     width:100%;
+     display: block;
+   }
+ }
+
+#profilePic{
+   width: 6em;
+   height: auto;
+   margin: auto;
+   display: block;
+   margin-top: 1.5em;
+   margin-bottom: 0.7em;
+}
+
+#account{
+   width: 1.5em;
+   height:auto;
+}
+
+ion-col.icon{
+   max-width: 2.5em;
+}
+
+ion-col.menuLabel{
+   text-align: left;
+}

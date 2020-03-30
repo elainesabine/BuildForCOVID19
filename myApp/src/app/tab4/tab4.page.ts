@@ -26,6 +26,10 @@ export class Tab4Page implements OnInit {
     }
   }
 
+  accountSettings(){
+    console.log("account settings");
+  }
+
   logout(){
     this.authService.logoutUser()
     .then(res => {

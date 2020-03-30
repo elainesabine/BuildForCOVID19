@@ -1,24 +1,62 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>My Account</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content>
+<ion-content id="tab4Page">
   <ion-grid>
+    <ion-img id="profilePic" src="../../assets/accountSettings.png"></ion-img>
     <ion-row>
-      <ion-col text-center>
-        Welcome to Dashboard!
+      <ion-col text-center id="greeting">
+        Hello, <span id="firstName"> {{authService.firstName}} </span>!
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col text-center>
-        Your Registered EmailID : {{userEmail}}
-        Welcome : {{authService.firstName}}
-      </ion-col>
+      <ion-col text-center id="userEmail"> {{userEmail}}</ion-col>
     </ion-row>
+    <br>
+    <ion-button fill="outline" class="menu" expand="block" > 
+      <span> <ion-row>
+          <ion-col class="icon"><ion-img id="account" src="../../assets/accountSettings.png"></ion-img></ion-col> 
+          <ion-col class="menuLabel">Account Settings</ion-col> 
+        </ion-row> </span>
+    </ion-button>
+    <ion-button fill="outline" class="menu" expand="block" > 
+      <span> <ion-row>
+          <ion-col class="icon"><ion-img id="account" src="../../assets/team.png"></ion-img></ion-col> 
+          <ion-col class="menuLabel">Connext With Friends</ion-col> 
+        </ion-row> </span>
+    </ion-button>
+    <ion-button fill="outline" class="menu" expand="block" > 
+      <span> <ion-row>
+          <ion-col class="icon"><ion-img id="account" src="../../assets/bell.png"></ion-img></ion-col> 
+          <ion-col class="menuLabel">Notification Settings</ion-col> 
+        </ion-row> </span>
+    </ion-button>
+    <br>
+    <ion-button fill="outline" class="menu" expand="block" > 
+      <span> <ion-row>
+          <ion-col class="icon"><ion-img id="account" src="../../assets/question.png"></ion-img></ion-col> 
+          <ion-col class="menuLabel">Support</ion-col> 
+        </ion-row> </span>
+    </ion-button>
+    <ion-button fill="outline" class="menu" expand="block" > 
+      <span> <ion-row>
+          <ion-col class="icon"><ion-img id="account" src="../../assets/contract.png"></ion-img></ion-col> 
+          <ion-col class="menuLabel">Terms of Service</ion-col> 
+        </ion-row> </span>
+    </ion-button>
+        <ion-button fill="outline" class="menu" expand="block" > 
+      <span> <ion-row>
+          <ion-col class="icon"><ion-img id="account" src="../../assets/lock.png"></ion-img></ion-col> 
+          <ion-col class="menuLabel">Privacy Policy</ion-col> 
+        </ion-row> </span>
+    </ion-button>
+
+   
   </ion-grid>  
 
-  <ion-button (click)="logout()">Logout</ion-button>
+  <ion-button (click)="logout()" id="logoutButton">Log-out</ion-button>
 
 </ion-content>
