@@ -1,6 +1,8 @@
-#tab4Page {
-   // --background: #fcfcfc;
-}
+ion-content, ion-toolbar{
+   --background: #F4F4F4;
+   font-family: 'SF-Pro-Light';
+ }
+
 #logoutButton {
    --border-radius: 2rem;
    font-size: 1.0rem;
@@ -51,6 +53,8 @@ ion-button.menu{
    --border-width: 1px;
    --border-radius: .5em;
    font-size: 1.0rem;
+   font-family: 'SF-Pro-Light';
+   text-transform: capitalize;
 }
 
 ion-button{
@@ -82,3 +86,29 @@ ion-col.icon{
 ion-col.menuLabel{
    text-align: left;
 }
+
+///////////////
+
+/*==============================list*/
+ion-list.md.list-md.hydrated {
+   background: transparent;
+ }
+ ion-item {
+   margin: 0.5rem 1rem 0 1rem;
+   border: 1px solid #D6D7DF;
+   border-radius: 10px;
+
+   --background-activated-opacity: 1;
+   --background-activated: #DB1848;
+   --color-activated: white;
+
+   font-family: 'SF-Pro-Light';
+
+ }
+ ion-img.icon {
+   width: 1.3rem;
+   margin-right: 1rem;
+ }
+ ion-label.menuLabel {
+   color: #707070;
+ }
