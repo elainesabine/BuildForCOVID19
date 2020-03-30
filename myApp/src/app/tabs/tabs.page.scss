@@ -2,6 +2,7 @@ ion-tab-button{
   background-size: 2em;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 3em;
 }
 /*tab1*/
 ion-tab-button#tab-button-tab1 {
@@ -13,17 +14,21 @@ ion-tab-button#tab-button-tab1.tab-selected, ion-tab-button#tab-button-tab1:hove
 /*tab2*/
 ion-tab-button#tab-button-tab2 {
   background-image: url(../../assets/icon/tab2-gray.png);
+  background-size: 2.8em;
 }
 ion-tab-button#tab-button-tab2.tab-selected, ion-tab-button#tab-button-tab2:hover {
   background-image: url(../../assets/icon/tab2-red.png);
+  background-size: 2.8em;
 }
 
 /*tab3*/
 ion-tab-button#tab-button-tab3 {
   background-image: url(../../assets/icon/tab3-gray.png);
+  background-size: 2.8em;
 }
 ion-tab-button#tab-button-tab3.tab-selected, ion-tab-button#tab-button-tab3:hover {
   background-image: url(../../assets/icon/tab3-red.png);
+  background-size: 2.8em;
 }
 
 /*tab4*/

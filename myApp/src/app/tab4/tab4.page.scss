@@ -14,6 +14,8 @@ ion-content, ion-toolbar{
    display: block;
    margin-left: auto;
    margin-right: auto;
+   text-transform: none;
+   font-family: 'SF-Pro-Light';
 }
 
 #firstName {
@@ -101,9 +103,7 @@ ion-list.md.list-md.hydrated {
    --background-activated-opacity: 1;
    --background-activated: #DB1848;
    --color-activated: white;
-
    font-family: 'SF-Pro-Light';
-
  }
  ion-img.icon {
    width: 1.3rem;
