@@ -1,3 +1,50 @@
-ion-content ion-toolbar {
-  --background: translucent;
+/*Todo: change fonts*/
+ion-content, ion-toolbar{
+  --background: #F4F4F4;
+}
+#title {
+  overflow:hidden;
+  line-height: 5rem;
+  padding-left: 4rem;
+  background: url('../../assets/icon/tab3-red.png') no-repeat left center;
+  background-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+ion-title#color-red{
+  color: #DB1848;
+  font-size: 2rem;
+  padding:0;
+}
+
+/*=============================disclaimer*/
+ion-title#disclaimer-title {
+  font-size: 1.5rem;
+  color: #707070;
+  border-bottom: 1px solid #707070;
+  margin: 0 1rem 0 1rem;
+  padding-left: 0;
+}
+p.content {
+  color: #707070;
+  margin-left: 2rem;
+  font-size: 1rem;
+}
+
+/*==============================list*/
+ion-list.md.list-md.hydrated {
+  background: transparent;
+}
+ion-item {
+  margin: 0.5rem 1rem 0 1rem;
+  border: 1px solid #D6D7DF;
+  border-radius: 10px;
+}
+ion-img.article-icon {
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+ion-label.sc-ion-label-md-h.sc-ion-label-md-s.md.hydrated.article-label {
+  color: #707070;
 }
