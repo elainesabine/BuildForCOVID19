@@ -42,15 +42,20 @@ ion-content.md.hydrated {
   text-align: -webkit-center;
 }
 ion-item {
-  height: 10rem;
+  height: 9rem;
   background: white;
-  width: 10rem;
-  align-items:center;
+  width: 9rem;
+  -webkit-box-align: center;
+  align-items: center;
 }
 div{
   display:flex;
   flex-direction:column;
   align-items: center;
+}
+ion-col.ios.hydrated {
+  /* width: 100%; */
+  text-align: -webkit-center;
 }
 
 /*=============================how are you feeling*/
