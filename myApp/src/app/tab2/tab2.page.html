@@ -6,7 +6,24 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content [fullscreen]="true">
+
+  <ion-row class="top-buttons">
+    <ion-col class="top-buttons">
+      <ion-button class="top-buttons selected"  fill="outline"> mood </ion-button>
+    </ion-col>
+    <ion-col class="top-buttons">
+      <ion-button class="top-buttons" fill="outline">symptoms</ion-button>
+    </ion-col>
+    <ion-col class="top-buttons">
+      <ion-button class="top-buttons" fill="outline">report</ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-toolbar>
+    <ion-title id ="page-title" class="content-title">How are you feeling today?</ion-title>
+  </ion-toolbar>
   <ion-row>
     <ion-col>
       <ion-item button="true" lines="none">
