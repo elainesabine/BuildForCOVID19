@@ -52,3 +52,46 @@ div{
   flex-direction:column;
   align-items: center;
 }
+
+/*=============================how are you feeling*/
+ion-title#page-title {
+  font-size: 1.5rem;
+  color: #707070;
+  border-bottom: 1px solid #707070;
+  margin: 0 2rem 0 2rem;
+  padding-left: 0;
+
+}
+p.content {
+  color: #707070;
+  margin-left: 2rem;
+  margin-right:2rem;
+  font-size: 1rem;
+
+}
+
+.top-buttons{
+  margin: 0;
+  padding: 0;
+}
+
+ion-button.top-buttons{
+  font-family: 'SF-Pro-Light';
+  margin: 0;
+  padding: 0;
+  --background: transparent;
+  --color: black;
+  --border-color: #707070;
+  --border-width: 1px;
+  width: 100%;
+  --border-radius: 0;
+}
+
+ion-row.top-buttons{
+  margin: 0 1em;
+}
+
+ion-button.top-buttons.selected{
+  --background: #DB1848;
+  --color: white;
+}
