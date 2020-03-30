@@ -1,17 +1,32 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<!--Flow:
+- Header: image & label
+- Content:
+  - disclaimer: labels
+  - multiple clickable cards: image & labels
+-->
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <!--title-->
+  <ion-header id="title" no-border>
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title id="color-red">
+         education
+      </ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    <!--disclaimer-->
+    <ion-toolbar>
+      <ion-title id ="disclaimer-title" class="content-title">disclaimer</ion-title>
+      <p class="content">Due to the nature of COVID-19, the facts available about the virus are ever-changing and often unclear. </p>
+      <p class="content">Below is the most up to date information provided by the Center for Disease Control and the World Health Center.</p>
+    </ion-toolbar>
+
+    <!--List of edu contents-->
+    <ion-list>
+      <ion-item *ngFor="let article of articles">
+        <ion-img class="article-icon" [src]="article.iconUrl"></ion-img>
+        <ion-label class="article-label">{{article.title}}</ion-label>
+      </ion-item>
+    </ion-list>
 </ion-content>
