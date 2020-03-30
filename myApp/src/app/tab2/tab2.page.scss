@@ -5,10 +5,10 @@ ion-content, ion-toolbar{
 #title {
   overflow:hidden;
   line-height: 5rem;
-  padding-left: 4rem;
+  padding-left: 5rem;
   background: url('../../assets/health.png') no-repeat left center;
   background-size: 3rem;
-  margin-top: 1rem;
+  background-position-x: 1rem;
   margin-bottom: 1rem;
   margin-left: 1rem;
 }
@@ -27,6 +27,7 @@ ion-item {
   --color-activated: white;
   font-family: 'SF-Pro-Light';
   --height: 3em;
+  padding-top: 0.6rem;
 }
 ion-img.icon {
   width:50%;
